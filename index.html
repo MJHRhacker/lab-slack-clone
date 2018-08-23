@@ -9,42 +9,47 @@
 </head>
 
 <body>
-  <header role="banner">
-    <nav>
-      <img id="img-logo" src="http://www.creditlenders.info/wp-content/uploads/slack-logo-png-transparent-slack-logo-images-pluspng-slack-logo.png" alt="Slack logo" />
-      <h1 id="slacklogo">Slack</h1>
-      <input id="nav-button" type="button">
+  <header id="site-header" role="banner">
+    <nav class="container">
+      <img class="img-logo" src="http://www.creditlenders.info/wp-content/uploads/slack-logo-png-transparent-slack-logo-images-pluspng-slack-logo.png" alt="Slack logo" />
+      <h1 class="slacklogo">Slack</h1>
+      <a href="#burguer" class="nav-button"><img src="https://www.visitlaie.com/wp-content/themes/laie/images/menu.svg" alt="Site menu button" width="20"></a>
     </nav>
   </header>
-  <main>
-    <section id="presentation">
+
+  <main class="site-main">
+    <section class="presentation">
       <h1>Donde tu trabajo fluye</h1>
       <p>Cuando tu equipo necesite poner en marcha un proyecto, contratar a un empleado, implementar código, revisar un contrato de ventas, finalizar el presupuesto del próximo año, medir una prueba A/B, planificar la apertura de tu próxima oficina o cualquier otra situación, puedes contar con Slack.</p>
-      <input type="button" class="button" id="first-steps" value="Primeros Pasos">
+      <input type="button" class="button first-steps" value="Primeros Pasos">
       <p>¿Ya usas Slack? <a href="">Conectarse</a></p>
-      <img id="team-work" src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.es-ES@2x.png" alt="Team work thanks to Slack" />
+      <img class="team-work" src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.es-ES@2x.png" alt="Team work thanks to Slack" />
     </section>
+
     <section id="testimonials">
-      <h2>Estás en buena compañía</h2>
-      <p>Para millones de personas de todo el mundo, Slack es donde el trabajo fluye.</p>
-      <button name="submit" class="button" type="submit" value="submit-true">Descubre por qué</button>
-      <div id="company-logos">
-      <ul>
-        <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/airbnb.png" alt="Air BnB logo" /></li>
-        <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/capital_one.png" alt="Capital One logo" /></li>
-        <li><img src="https://a.slack-edge.com/bd839/marketing/img/logos/company/target.png" alt="Target logo" /></li>
-        <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/oracle.png" alt="Oracle logo" /></li>
-        <li><img src="https://a.slack-edge.com/cc97d0/marketing/img/logos/company/trivago.png" alt="Trivago logo" /></li>
-        <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/ticketmaster.png" alt="Ticketmaster logo" /></li>
-      </ul>
+      <div class="testim">
+        <h2>Estás en buena compañía</h2>
+        <p>Para millones de personas de todo el mundo, Slack es donde el trabajo fluye.</p>
+        <button name="submit" class="button" type="submit" value="submit-true">Descubre por qué</button>
+        <div class="company-logos">
+        <ul>
+          <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/airbnb.png" alt="Air BnB logo" /></li>
+          <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/capital_one.png" alt="Capital One logo" /></li>
+          <li><img src="https://a.slack-edge.com/bd839/marketing/img/logos/company/target.png" alt="Target logo" /></li>
+          <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/oracle.png" alt="Oracle logo" /></li>
+          <li><img src="https://a.slack-edge.com/cc97d0/marketing/img/logos/company/trivago.png" alt="Trivago logo" /></li>
+          <li><img src="https://a.slack-edge.com/c04e5/marketing/img/logos/company/ticketmaster.png" alt="Ticketmaster logo" /></li>
+        </ul>
+        </div>
       </div>
     </section>
+
     <section id="trial">
       <h2>Prueba Slack con tu equipo gratis</h2>
       <button name="submit" class="button" type="submit" value="submit-true">Consigue Slack para Android</button> 
-
     </section>
   </main>
+
   <footer>
       
   </footer>
