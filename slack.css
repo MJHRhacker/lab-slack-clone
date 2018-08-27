@@ -14,7 +14,6 @@ body {
 
 ul {
   list-style: none;
-  text-align: center;
   padding: 0;
 }
 
@@ -54,14 +53,6 @@ h1, h2, h3, h4 {
   float: left;
 }
 
-.img-logo {
-  float: left;
-  width: 50px;
-}
-
-site-map.img-logo {
-  margin: 50px;
-}
 
 #site-header {
   padding: 10px 0;
@@ -78,19 +69,17 @@ site-map.img-logo {
 .presentation {
   padding-top: 20px;
   padding-bottom: 0;
-  margin: 0 20px;
   text-align: left;
 }
 
 .signup {
   padding-top: 20px;
   padding-bottom: 0;
-  margin: 0 20px;
   text-align: left;
   }
 
 .trial {
-  padding: 60px 20px;
+  padding: 60px 0px;
   text-align: center;
 }
 
@@ -111,9 +100,7 @@ site-map.img-logo {
 }
 
 .container {
-  margin: 20px 20px;
-  display: flex;
-  flex-wrap: wrap 50%;
+  margin: 0 20px;
 }
 
 .section {
@@ -128,25 +115,6 @@ site-map.img-logo {
   }
 }
 
-.site-footer{
-  background-color: #ccc;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-} 
-
-.one {
-  flex: 2;
-}
-
-.two {
-  flex: 3;
-}
-
-.three {
-  flex: 2;
-}
 
 .select {
   background: transparent;
@@ -197,7 +165,6 @@ section.testimonials li {
 section.testimonials .testim {
   padding-top: 20px;
   padding-bottom: 40px;
-  margin: 0 20px;
   text-align: center;
 }
 
@@ -215,21 +182,59 @@ section.trial .trial-email {
     width: 100%;
   }
 
-section .list > li {
+
+
+
+section.site-map .img-logo {
+  width: 50px;
+}
+
+
+section.site-map .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+section.site-map .list > li {
   width: 50%;
 }
 
 @media (min-width: 1024px) {
-  .container {
+
+  section.site-map {
+    display: flex;
+  } 
+
+  section.site-map .footer-logo {
+    flex: 1;
+  } 
+
+  section.site-map > div {
+    flex: 4;
+  } 
+
+  section.site-map .list > li {
     width: 25%;
   }
 }
 
-section .footer {
-  justify-content: space-around;
+
+
+.site-footer {
+  padding: 20px 0 60px;
+  background-color: #ccc;
+  text-align: center;
+} 
+
+.site-footer .links {
+  display: flex;
+}
+
+.site-footer .links li {
+  flex: 1;
 }
  
-.footer-logo {
+.site-footer .footer-logo {
   margin: 30px;
   padding-bottom: 20px;
 }
